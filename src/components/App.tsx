@@ -1,6 +1,7 @@
 import React from 'react';
-import Contact from './contact/Contact';
-import About from './about/About';
+import Art from './art/Art';
+import Projects from './projects/Projects';
+import Resume from './resume/Resume';
 import Home from './Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -11,11 +12,14 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/about">
-          <About />
+        <Route exact path="/projects">
+          <Projects />
         </Route>
-        <Route exact path="/contact">
-          <Contact />
+        <Route exact path="/resume">
+          <Resume />
+        </Route>
+        <Route exact path="/art">
+          <Art />
         </Route>
       </Switch>
     </Router>
