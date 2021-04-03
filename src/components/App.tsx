@@ -1,8 +1,8 @@
 import React from 'react';
-import Art from './art/Art';
-import Projects from './projects/Projects';
-import Resume from './resume/Resume';
-import Home from './Home';
+import Art from '../pages/art';
+import Projects from '../pages/projects';
+import Resume from '../pages/resume';
+import Home from '../pages/index';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
