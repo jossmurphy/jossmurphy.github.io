@@ -31,6 +31,7 @@ export default function Art() {
       <Gallery
         photos={photos}
         direction={'column'}
+        margin={4}
         // onClick={() => {
         //   for (let i = photos.length - 1; i > 0; i--) {
         //     const j = Math.floor(Math.random() * i);
