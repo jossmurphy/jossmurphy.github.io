@@ -28,12 +28,24 @@ const NavList = styled('ul')`
   color: ${colors.i40};
 `;
 const NavItems = styled('a')`
-  padding: 5px 15px;
+  padding: 10px 15px;
   font-weight: bold;
   text-decoration: none;
   color: #000;
+
+  // font-style: italic;
+  font-size: large;
+  vertical-align: bottom;
+
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #ddd 50%);
+  background-position: -0% -1em;
+  background-size: 200% auto;
+  line-height: 0;
+  text-decoration: none;
+  transition: background-position 0.5s ease-out;
+
   &:hover {
-    color: ${colors.i40};
+    background-position: -99.99% -50%;
   }
 `;
 
