@@ -298,8 +298,8 @@ export const photos = [
   },
   {
     src: phone_tropical_fruit,
-    width: 3,
-    height: 4,
+    width: 2,
+    height: 3,
   },
   {
     src: character_lalala,
@@ -411,11 +411,11 @@ export const photos = [
     width: 3,
     height: 5,
   },
-  {
-    src: character_kooky_backpack,
-    width: 3,
-    height: 5,
-  },
+  // {
+  //   src: character_kooky_backpack,
+  //   width: 3,
+  //   height: 5,
+  // },
   {
     src: characters_WOO_grassskirt,
     width: 3,

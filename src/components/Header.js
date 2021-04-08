@@ -49,9 +49,11 @@ const NavItems = styled('a')`
   }
 `;
 
-const NavName = styled('text')`
+const NavName = styled('p')`
   font-weight: bold;
   font-size: large;
+  padding: 0px 0px;
+
   text-decoration: none;
   color: #000;
   margin-right: auto;

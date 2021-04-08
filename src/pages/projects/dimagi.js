@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../components/Header';
+import Header from '../../components/Header';
 import styled from '@emotion/styled';
 import {
   PageTitle,
@@ -10,16 +10,16 @@ import {
   Caption,
   P,
   CaseStudy,
-} from '../styles/global.js';
+} from '../../styles/global.js';
 
 const BackgroundImage = styled('div')``;
 
-function Home() {
+function Dimagi() {
   return (
     <div>
       <Header></Header>
       <CaseStudy>
-        <PageTitle>Home Page</PageTitle>
+        <PageTitle>Dimagi Tuberculosis Template App</PageTitle>
         <Subtitle1>Subtitle1</Subtitle1>
         <Subtitle2>Subtitle2</Subtitle2>
         <SubtitleSection>H4</SubtitleSection>
@@ -31,4 +31,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Dimagi;
