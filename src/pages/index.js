@@ -14,18 +14,20 @@ import {
 
 const BackgroundImage = styled('div')``;
 
+const content = {
+  bio: ` A product designer, software developer, and student at the University of Waterloo. 
+  Currently designing and developing at UW Blueprint. Most interested in working at the intersection of tech, design, and social good. 
+  Previously software developing at Auvik Networks, Designing with Dimagi, Leading at SVP Teens.
+  `,
+};
+
 function Home() {
   return (
     <div>
       <Header></Header>
       <CaseStudy>
-        <PageTitle>Home Page</PageTitle>
-        <Subtitle1>Subtitle1</Subtitle1>
-        <Subtitle2>Subtitle2</Subtitle2>
-        <SubtitleSection>H4</SubtitleSection>
-        <BlockQuote>H5</BlockQuote>
-        <Caption>H6</Caption>
-        <P>This is body paragraph text.</P>
+        <PageTitle>Jocelyne Murphy</PageTitle>
+        <P>{`${content.bio}`}</P>
       </CaseStudy>
     </div>
   );
