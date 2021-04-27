@@ -5,7 +5,19 @@ import Photo from '../components/Photo';
 import arrayMove from 'array-move';
 import { SortableContainer, SortableElement } from 'react-sortable-hoc';
 import Header from '../components/Header';
-import PageTitle from '../components/PageTitle';
+import {
+  PageTitle,
+  Subtitle1,
+  Subtitle2,
+  SubtitleSection,
+  BlockQuote,
+  Caption,
+  P,
+  CaseStudy,
+  Hyperlink,
+  HeroDiv,
+  HeroImage,
+} from '../styles/global.js';
 
 /* popout the browser and maximize to see more rows! -> */
 const SortablePhoto = SortableElement((item) => <Photo {...item} />);
@@ -29,7 +41,7 @@ export default function Art() {
   return (
     <div>
       <Header></Header>
-      <PageTitle></PageTitle>
+      <PageTitle> . </PageTitle>
       <Gallery
         photos={photos}
         direction={'column'}

@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../components/Header';
 import styled from '@emotion/styled';
+import colors from '../styles/colors';
+
 import {
   PageTitle,
   Subtitle1,
@@ -9,15 +11,46 @@ import {
   BlockQuote,
   Caption,
   P,
+  A,
+  Button,
+  Container,
   CaseStudy,
+  Hyperlink,
 } from '../styles/global.js';
 
 const BackgroundImage = styled('div')``;
+const links = {
+  blueprint: (
+    <Hyperlink href="https://uwblueprint.org/" target="_blank">
+      {' '}
+      UW Blueprint
+    </Hyperlink>
+  ),
+  auvik: (
+    <Hyperlink href="https://www.auvik.com/" target="_blank">
+      {' '}
+      Auvik Networks
+    </Hyperlink>
+  ),
+  svpteens: (
+    <Hyperlink
+      href="https://www.socialventurepartners.org/waterloo-region/news/reflecting-on-the-2019-20-year-for-svp-teens-a-true-step-forward/"
+      target="_blank"
+    >
+      {' '}
+      SVP Teens
+    </Hyperlink>
+  ),
+  syde: (
+    <Hyperlink href="http://ugradcalendar.uwaterloo.ca/page/ENG-Systems-Design-Engineering" target="_blank">
+      {' '}
+      Systems Design Engineering{' '}
+    </Hyperlink>
+  ),
+};
 
 const content = {
-  bio: ` A product designer, software developer, and student at the University of Waterloo. 
-  Currently designing and developing at UW Blueprint. Most interested in working at the intersection of tech, design, and social good. 
-  Previously software developing at Auvik Networks, Designing with Dimagi, Leading at SVP Teens.
+  bio: ` Hi! I'm Joss. I'm a software developer, product designer, and
   `,
 };
 
@@ -26,8 +59,19 @@ function Home() {
     <div>
       <Header></Header>
       <CaseStudy>
-        <PageTitle>Jocelyne Murphy</PageTitle>
-        <P>{`${content.bio}`}</P>
+        <PageTitle>Welcome!</PageTitle>
+        <P>
+          {content.bio} {links.syde} student at the University of Waterloo. Previously developing at {links.auvik},
+          designing at {links.blueprint}, and leading at {links.svpteens}.
+        </P>
+        <Container column>
+          <Button primary>
+            <A href="/work">Projects</A>
+          </Button>
+          <Button>
+            <A href="/resume">Resume</A>
+          </Button>
+        </Container>
       </CaseStudy>
     </div>
   );

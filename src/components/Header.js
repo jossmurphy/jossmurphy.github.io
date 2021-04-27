@@ -1,21 +1,23 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import colors from '../styles/colors';
+import { Hyperlink } from '../styles/global';
 
 const navLinks = [
-  { title: `home`, path: `/` },
-  { title: `work`, path: `/work` },
-  { title: `about`, path: `/about` },
-  { title: `art`, path: `/art` },
-  { title: `resume`, path: `/resume` },
+  { title: `Home`, path: `/` },
+  { title: `Work`, path: `/work` },
+  { title: `About`, path: `/about` },
+  { title: `Art`, path: `/art` },
+  { title: `Resume`, path: `/resume` },
 ];
 
 const NavContainer = styled('div')`
   display: flex;
   flex-direction: row;
   font-weight: lighter;
-  padding: 1vh;
   width: 98%;
+  max-width: 1550px;
+  margin: 0 auto;
   height: 1.5rem;
 `;
 const NavList = styled('ul')`
@@ -28,28 +30,25 @@ const NavList = styled('ul')`
   color: ${colors.i40};
 `;
 const NavItems = styled('a')`
-  padding: 10px 15px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #000;
+  padding: 6px 15px;
+  margin-top: 13px;
+  font-family: 'Avenir', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: ${colors.c10};
 
-  // font-style: italic;
-  font-size: large;
-  vertical-align: bottom;
-
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #ddd 50%);
-  background-position: -0% -1em;
-  background-size: 200% auto;
-  line-height: 0;
   text-decoration: none;
-  transition: background-position 0.5s ease-out;
 
   &:hover {
-    background-position: -99.99% -50%;
+    color: ${colors.r50};
   }
 `;
 
 const NavName = styled('p')`
+  font-family: 'Avenir', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
   font-weight: bold;
   font-size: large;
   padding: 0px 0px;

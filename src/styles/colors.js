@@ -1,5 +1,9 @@
 // theme colours and tints
 const colors = {
+  highlight: '#D1FA90', //g50
+  primarybutton: '#FFAA97', //r50
+  secondarybutton: '#FFD4A0', //o50
+
   m10: '#29032D',
   m20: '#521C41',
   m30: '#811D4D',
@@ -32,7 +36,7 @@ const colors = {
   g20: '#305300',
   g30: '#59900A',
   g40: '#85CF1C',
-  g50: '#2D0317',
+  g50: '#D1FA90',
   g60: '#F0FCE1',
 
   b10: '#020428',
