@@ -8,7 +8,7 @@ const navLinks = [
   { title: `Work`, path: `/work` },
   { title: `About`, path: `/about` },
   { title: `Art`, path: `/art` },
-  { title: `Resume`, path: `/resume` },
+  { title: `Resume`, path: `/static/media/JocelyneMurphy_Resume.27dc36e6.pdf` }, // change once I add pdf viewer
 ];
 
 const NavContainer = styled('div')`
@@ -35,7 +35,7 @@ const NavItems = styled('a')`
   font-family: 'Avenir', Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   color: ${colors.c10};
 
   text-decoration: none;

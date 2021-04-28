@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import styled from '@emotion/styled';
 import colors from '../styles/colors';
+import Resume_pdf from '../assets/JocelyneMurphy_Resume.pdf';
 
 import {
   PageTitle,
@@ -69,7 +70,9 @@ function Home() {
             <A href="/work">Projects</A>
           </Button>
           <Button>
-            <A href="/resume">Resume</A>
+            <A href={Resume_pdf} target="blank">
+              Resume
+            </A>{' '}
           </Button>
         </Container>
       </CaseStudy>

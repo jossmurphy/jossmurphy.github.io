@@ -145,6 +145,7 @@ export const Hyperlink = styled('a')`
 
 export const CaseStudy = styled('div')`
   margin: 40px 10vw;
+  margin-top: 200px;
 `;
 
 export default jossTheme;
