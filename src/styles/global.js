@@ -63,6 +63,7 @@ export const PageTitle = styled('h1')`
   font-family: 'Avenir', sans-serif;
   font-size: 48px;
   padding: 0px;
+  margin: 0px;
 `;
 
 export const Subtitle1 = styled('h2')`
@@ -143,7 +144,7 @@ export const Hyperlink = styled('a')`
 `;
 
 export const CaseStudy = styled('div')`
-  margin: 10vw;
+  margin: 40px 10vw;
 `;
 
 export default jossTheme;

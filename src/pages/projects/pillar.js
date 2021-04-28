@@ -9,8 +9,11 @@ import {
   BlockQuote,
   Caption,
   P,
+  HeroDiv,
   CaseStudy,
+  HeroImage,
 } from '../../styles/global.js';
+import about_image from '../../assets/projects/tk-hero.png';
 
 const BackgroundImage = styled('div')``;
 
@@ -32,6 +35,9 @@ function Pillar() {
   return (
     <div>
       <Header></Header>
+      <HeroDiv>
+        <HeroImage src={about_image}></HeroImage>
+      </HeroDiv>
       <CaseStudy>
         {/* <img src={Hero} alt="Hero Image" /> */}
         <PageTitle>Pillar</PageTitle>
