@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Cardd from '../components/Card';
 
 import styled from '@emotion/styled';
 import colors from '../styles/colors';
@@ -115,6 +116,11 @@ function Home() {
         <A href="/projects/pillar">Pillar</A>
       </Button>
       <div style={{ height: '30vh' }}></div>
+      <div style={{ display: 'flex' }}>
+        <Cardd img={fruitfly} title="UW Blueprint Website Redesign"></Cardd>
+        <Cardd img={fruitfly} title="Pillar"></Cardd>
+        <Cardd img={fruitfly} title="Fundrise"></Cardd>
+      </div>
     </div>
   );
 }
