@@ -5,6 +5,7 @@ import Photo from '../components/Photo';
 import arrayMove from 'array-move';
 import { SortableContainer, SortableElement } from 'react-sortable-hoc';
 import Header from '../components/Header';
+import styled from '@emotion/styled';
 import {
   PageTitle,
   Subtitle1,
@@ -17,7 +18,28 @@ import {
   Hyperlink,
   HeroDiv,
   HeroImage,
+  Footer,
 } from '../styles/global.js';
+
+const ArtContainer = styled('div')`
+  max-width: 1550px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+
+  width: 96%;
+`;
+
+const IntroContainer = styled('div')`
+  max-width: 1550px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+
+  width: 96%;
+`;
 
 /* popout the browser and maximize to see more rows! -> */
 const SortablePhoto = SortableElement((item) => <Photo {...item} />);
@@ -41,23 +63,30 @@ export default function Art() {
   return (
     <div>
       <Header></Header>
-      <PageTitle> . </PageTitle>
-      <Gallery
-        photos={photos}
-        direction={'column'}
-        margin={4}
-        // onClick={() => {
-        //   for (let i = photos.length - 1; i > 0; i--) {
-        //     const j = Math.floor(Math.random() * i);
-        //     const temp = photos[i];
-        //     photos[i] = photos[j];
-        //     photos[j] = temp;
-        //   }
+      <div style={{ height: '100px' }}></div>
 
-        //   setPhotos(photos);
-        // }}
-      />
-      ;
+      <CaseStudy>
+        <PageTitle> Art </PageTitle>
+        <P>Check out some of my illustrations! </P>
+      </CaseStudy>
+      <ArtContainer>
+        <Gallery
+          photos={photos}
+          direction={'column'}
+          margin={4}
+          // onClick={() => {
+          //   for (let i = photos.length - 1; i > 0; i--) {
+          //     const j = Math.floor(Math.random() * i);
+          //     const temp = photos[i];
+          //     photos[i] = photos[j];
+          //     photos[j] = temp;
+          //   }
+
+          //   setPhotos(photos);
+          // }}
+        />
+      </ArtContainer>
+
       {/* <h2>Sortable Gallery</h2>
       <h3>Drag photo to rearrange</h3>
       <SortableGallery items={items} onSortEnd={onSortEnd} axis={'xy'} /> */}

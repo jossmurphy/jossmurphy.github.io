@@ -10,6 +10,7 @@ import {
   Caption,
   P,
   CaseStudy,
+  Footer,
 } from '../../styles/global.js';
 
 const BackgroundImage = styled('div')``;

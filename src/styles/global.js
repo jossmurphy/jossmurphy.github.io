@@ -15,20 +15,25 @@ const jossTheme = {
 
 export const HeroImage = styled('img')`
   display: block;
-  margin-left: 10vw;
+  margin-left: auto;
   margin-right: auto;
-  width: 80%;
-  max-width: 800px;
+  width: 100%;
 `;
 
 export const HeroDiv = styled('div')`
   display: block;
-  width: 100%;
+  width: 80%;
+  max-width: 1000px;
   margin-top: 10vh;
   height: auto;
-  max-height: 300px;
+  max-height: 400px;
   margin-bottom: 20px;
   overflow: hidden;
+  border-radius: 5px;
+  // border: 2px solid black;
+  // box-shadow: 5px 5px;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const Button = styled.button`
@@ -42,7 +47,6 @@ export const Button = styled.button`
   font-weight: 400;
   font-size: 18px;
   color: ${colors.c10};
-  outline: none;
   box-shadow: 5px 5px;
 `;
 
@@ -70,7 +74,7 @@ export const Subtitle1 = styled('h2')`
   font-family: 'Avenir', Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 24px;
   margin-top: 0.4em;
   margin-bottom: 0;
   color: #000000;
@@ -80,9 +84,10 @@ export const Subtitle2 = styled('h3')`
   font-family: 'Avenir', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 0;
   color: #000000;
+  padding-left: 0px;
 `;
 
 export const SubtitleSection = styled('h4')`
@@ -105,15 +110,21 @@ export const Caption = styled('h5')`
 `;
 
 export const BlockQuote = styled('h6')`
-  font-family: 'proxima-nova', Helvetica, sans-serif;
+  font-family: 'Avenir', Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   background-color: ${colors.c110};
   padding: 24px;
-  font-size: 24px;
+  font-size: 18px;
   border-radius: 3px;
   line-height: 1.4em;
-  border-left: 6px solid ${colors.m50};
+  border-left: 6px solid ${(props) => (props.primary ? colors.primarybutton : colors.m50)};
+  //   if (props.primary) {
+  //     colors.primarybutton;
+  //   } else {
+  //     colors.secondarybutton;
+  //   }
+  // }};
   margin: 40px 0;
 `;
 
@@ -144,8 +155,14 @@ export const Hyperlink = styled('a')`
 `;
 
 export const CaseStudy = styled('div')`
-  margin: 40px 10vw;
-  margin-top: 200px;
+  // margin-left: 10vw auto;
+  // margin-right: 10vw auto;
+  max-width: 1000px;
+  margin: 10vw auto;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  padding-left: 10vw;
+  padding-right: 10vw;
 `;
 
 export default jossTheme;

@@ -13,9 +13,7 @@ import {
   CaseStudy,
   HeroImage,
 } from '../../styles/global.js';
-import about_image from '../../assets/projects/tk-hero.png';
-
-const BackgroundImage = styled('div')``;
+import about_image from '../../assets/projects/PillarHero.png';
 
 const content = {
   role: `Product Designer`,
@@ -31,13 +29,26 @@ const content = {
   solutionSummary: 'the solution but short',
 };
 
+const BackgroundImage = styled('div')`
+  width: 100vw;
+  height: 400px;
+  background: url(${about_image}) repeat #bddeff;
+  background-size: cover;
+  margin-right: 0;
+  margin-left: auto;
+  margin-top: 40px;
+  padding: 0;
+`;
+
 function Pillar() {
   return (
     <div>
       <Header></Header>
-      <HeroDiv>
+
+      <BackgroundImage></BackgroundImage>
+      {/* <HeroDiv>
         <HeroImage src={about_image}></HeroImage>
-      </HeroDiv>
+      </HeroDiv> */}
       <CaseStudy>
         {/* <img src={Hero} alt="Hero Image" /> */}
         <PageTitle>Pillar</PageTitle>

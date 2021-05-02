@@ -13,6 +13,7 @@ import {
   Container,
   CaseStudy,
   Hyperlink,
+  Footer,
 } from '../styles/global.js';
 
 export default function Projects() {

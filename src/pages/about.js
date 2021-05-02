@@ -13,6 +13,7 @@ import {
   Hyperlink,
   HeroDiv,
   HeroImage,
+  Footer,
 } from '../styles/global.js';
 import about_image from '../assets/projects/about.png';
 

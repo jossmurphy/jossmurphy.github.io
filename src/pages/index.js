@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
+
 import styled from '@emotion/styled';
 import colors from '../styles/colors';
 import Resume_pdf from '../assets/JocelyneMurphy_Resume.pdf';
@@ -18,6 +20,9 @@ import {
   CaseStudy,
   Hyperlink,
 } from '../styles/global.js';
+import fruitfly from '../assets/artphotos/ff.png';
+import { blue } from '@material-ui/core/colors';
+import { AutoComplete } from 'material-ui';
 
 const BackgroundImage = styled('div')``;
 const links = {
@@ -59,23 +64,57 @@ function Home() {
   return (
     <div>
       <Header></Header>
-      <CaseStudy>
-        <PageTitle>Welcome!</PageTitle>
-        <P>
-          {content.bio} {links.syde} student at the University of Waterloo. Previously developing at {links.auvik},
-          designing at {links.blueprint}, and leading at {links.svpteens}.
-        </P>
-        <Container column>
-          <Button primary>
-            <A href="/work">Projects</A>
-          </Button>
-          <Button>
-            <A href={Resume_pdf} target="blank">
-              Resume
-            </A>{' '}
-          </Button>
-        </Container>
-      </CaseStudy>
+      <div style={{ height: '50px' }}></div>
+      <div style={{ overflowX: 'hidden', overflowY: 'hidden', display: 'flex' }}>
+        <div
+          style={{
+            width: '90vw',
+            // maxWidth: '2000px',
+            padding: '10vw',
+            top: '50%',
+          }}
+        >
+          <PageTitle>Welcome!</PageTitle>
+          <P>
+            {content.bio} {links.syde} student at the University of Waterloo. Previously developing at {links.auvik},
+            designing at {links.blueprint}, and leading at {links.svpteens}.
+          </P>
+          <Container column>
+            <Button primary>
+              <A href="/work">Projects</A>
+            </Button>
+            <Button>
+              <A href={Resume_pdf} target="blank">
+                Resume
+              </A>{' '}
+            </Button>
+          </Container>
+        </div>
+        <div>
+          <img
+            src={fruitfly}
+            style={{
+              width: '150vw',
+              maxWidth: '1000px',
+              height: 'auto',
+              transform: 'translateX(-15%)',
+
+              zIndex: -1,
+            }}
+          ></img>
+        </div>
+      </div>
+
+      <Button primary>
+        <A href="/projects/blueprint">Blueprint</A>
+      </Button>
+      <Button primary>
+        <A href="/projects/fundrise">Fundrise</A>
+      </Button>
+      <Button primary>
+        <A href="/projects/pillar">Pillar</A>
+      </Button>
+      <div style={{ height: '30vh' }}></div>
     </div>
   );
 }

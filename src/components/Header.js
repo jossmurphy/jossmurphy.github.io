@@ -4,8 +4,8 @@ import colors from '../styles/colors';
 import { Hyperlink } from '../styles/global';
 
 const navLinks = [
-  { title: `Home`, path: `/` },
-  { title: `Work`, path: `/work` },
+  // { title: `Work`, path: `/work` },
+  { title: `Work`, path: `/` },
   { title: `About`, path: `/about` },
   { title: `Art`, path: `/art` },
   { title: `Resume`, path: `/static/media/JocelyneMurphy_Resume.27dc36e6.pdf` }, // change once I add pdf viewer
@@ -62,16 +62,18 @@ const NavName = styled('p')`
 
 const Header = () => {
   return (
-    <NavContainer>
-      <NavName>JOCELYNE MURPHY</NavName>
-      <NavList>
-        {navLinks.map(({ title, path }) => (
-          <NavItems href={path} key={title}>
-            {title}
-          </NavItems>
-        ))}
-      </NavList>
-    </NavContainer>
+    <div>
+      <NavContainer>
+        <NavName>JOCELYNE MURPHY</NavName>
+        <NavList>
+          {navLinks.map(({ title, path }) => (
+            <NavItems href={path} key={title}>
+              {title}
+            </NavItems>
+          ))}
+        </NavList>
+      </NavContainer>
+    </div>
   );
 };
 
