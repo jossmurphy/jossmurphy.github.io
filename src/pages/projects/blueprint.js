@@ -16,6 +16,7 @@ import {
 } from '../../styles/global.js';
 import about_image from '../../assets/projects/BlueprintHero.png';
 import bpfullscreen from '../../assets/projects/BlueprintFS.png';
+import bphighfive from '../../assets/projects/bphighfive.png';
 import colors from '../../styles/colors';
 
 const content = {
@@ -458,8 +459,77 @@ function Blueprint() {
           <Subtitle1>Past Iterations</Subtitle1>
 
           <SubtitleSection>{'Results'}</SubtitleSection>
-          <Subtitle1>Conclusion</Subtitle1>
+          <Subtitle1>Lessons Learned</Subtitle1>
+          <P>
+            <ul>
+              <li>
+                <b>Developer Collaboration</b> This was my first major project working on a cross-functional team, and I
+                learned a lot about communicating with developers! Some big takeaways were that an agile development
+                process (vs waterfall) can be excellent with a short timeline as development can begin before design is
+                finished, keeping developers in the loop about the reasoning behind design decisions can give them
+                uesful context, and clarifying conversations are essential for both parties to ensure that there is a
+                shared understanding of constraints and objectives.
+              </li>
+              <li>
+                <b> Designing regardless of content.</b> While designing our client was unsure what content they wanted
+                to put on each page. Initially this was preventing us from making process, but we adapted to this by
+                creating designs that could be adapted to match different types and amounts of content. This was
+                challenging, but was an important design lesson and ultimately motivated us to create a design system to
+                keep our brand consistent!
+              </li>
+              <li>
+                <b>
+                  On a short timeline, PMs and designers must collaborate to make clear distinctions between &quot;must
+                  haves&quot; and &quot;nice to haves&quot;.
+                </b>{' '}
+                I was surprised by how much PM and designer collaboration occured, but prioritizing which features to be
+                built and in which order ended up being a large part of the designer role.
+              </li>
+              <li>
+                <b>Providing distinct options to the client</b> In initial feedback reviews with the client, we would
+                occasionally ask for ideas and lead brainstorming sessions before having concrete designs to show. Since
+                we had many clients (all students at the organization seemed to have an opinion), we quickly realized
+                that we needed to narrow the feedback we would be given in order to make progress. We began coming with
+                clearly defined options to client meetings, and we were able to hone in on exactly what the client liked
+                and didn&apos;t like far more easily.
+              </li>
+            </ul>
+          </P>
+
           <Subtitle1>Next Steps</Subtitle1>
+          <P>
+            <ul>
+              <li>
+                <b>App development</b> will be continuing over the next 4 months. This will involve completing the
+                remaining pages based on designs, ensuring pages are responsive to various screen sizes (many website
+                users will be on mobile devices), and animating the new illustrations to add personality to the site.
+              </li>
+              <li>
+                <b>Follow up interviews with NPOs </b>should be conducted to verify that their questions are being
+                answered and they view Blueprint as a trustworthy organization to partner with. Student feedback was
+                conducted throughout the process, but the website could benefit from more evaluation from our other
+                primary audience.
+              </li>
+              <li>
+                <b>Reaching Non Profits through their existing communication channels</b> is a key principle that must
+                be considered in the context of this design challenge. Though the challenge was to redesign the website,
+                it was concluded through user interviews that there are existing channels Non Profit leaders communicate
+                through. Recognizing that these channels as a part of a user&apos;s journey is essential to our design
+                of the website, as the website is likely to be a secondary contact point where users go to learn more
+                about the organization. As mentioned above, many design decisions were made on this principle, and
+                consequently a next step would to begin marketing ourselves in exsitng channeles (newsletters,
+                newspapers, email lists, referrals, etc.).
+              </li>
+            </ul>
+          </P>
+          <Subtitle1>Conclusion</Subtitle1>
+          <P>
+            {' '}
+            This project supported an organization I&aops;m really passionate about and I learned a ton about design
+            along the way! I&aops;m very excited to see the redesign launch later in 2021!
+          </P>
+
+          <img src={bphighfive} style={{ width: '100%', padding: ' 8vh 0vh' }}></img>
         </CaseStudy>
       </div>
     </div>

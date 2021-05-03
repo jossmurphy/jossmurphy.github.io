@@ -14,6 +14,7 @@ import Footer from './Footer';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import FileCloud from 'material-ui/svg-icons/file/cloud';
+import WIP from '../pages/wip';
 
 function App() {
   return (
@@ -53,6 +54,9 @@ function App() {
           </Route>
           <Route exact path="/projects/diamgi">
             <Dimagi />
+          </Route>
+          <Route exact path="/wip">
+            <WIP />
           </Route>
         </Switch>
       </Router>

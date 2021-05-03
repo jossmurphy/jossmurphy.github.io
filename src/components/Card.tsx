@@ -65,7 +65,7 @@ export default function Cardd(props: any) {
   const classes = useStyles();
 
   return (
-    <A href={props.hreef}>
+    <A href={props.hreef} target="_blank">
       <BetterCard className={classes.root} style={{ margin: '20px', borderRadius: '10px', display: 'flexbox' }}>
         <CardMedia
           component="img"
@@ -75,7 +75,7 @@ export default function Cardd(props: any) {
           title="Contemplative Reptile"
         />
         <BetterCardContent>
-          <Subtitle1>{props.title}</Subtitle1>
+          <Subtitle1 style={{ marginTop: '0px' }}>{props.title}</Subtitle1>
           <div style={{ display: 'flex', flexDirection: 'row', marginLeft: '-5px' }}>
             <Tag>hello</Tag>
             <Tag>hello</Tag>

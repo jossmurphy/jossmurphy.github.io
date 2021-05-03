@@ -4,8 +4,8 @@ import colors from '../styles/colors';
 import { Hyperlink } from '../styles/global';
 
 const navLinks = [
-  // { title: `Work`, path: `/work` },
-  { title: `Work`, path: `/` },
+  { title: `Home`, path: `/` },
+  { title: `Work`, path: `/work` },
   { title: `About`, path: `/about` },
   { title: `Art`, path: `/art` },
   { title: `Resume`, path: `/static/media/JocelyneMurphy_Resume.27dc36e6.pdf` }, // change once I add pdf viewer

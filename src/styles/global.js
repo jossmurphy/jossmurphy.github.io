@@ -81,7 +81,7 @@ export const Subtitle1 = styled('h2')`
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  margin-top: 0.4em;
+  margin-top: 2em;
   margin-bottom: 0;
   color: #000000;
 `;
@@ -102,7 +102,7 @@ export const SubtitleSection = styled('h4')`
   font-weight: 500;
   font-size: 24px;
   text-transform: uppercase;
-  margin-bottom: 0;
+  margin-bottom: -30px;
   color: ${colors.m30};
 `;
 

@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Cardd from '../components/Card';
 import HorizontalCard from '../components/HorizontalCard';
+import WIP from './wip';
 
 import styled from '@emotion/styled';
 import colors from '../styles/colors';
@@ -87,6 +88,8 @@ function Home() {
             {content.bio} {links.syde} student at the University of Waterloo. Previously developing at {links.auvik},
             designing at {links.blueprint}, and leading at {links.svpteens}.
           </P>
+
+          <P>Reach out any time at jocelynemurphy@gmail.com</P>
           <Container column>
             <Button primary>
               <A href="/work">Projects</A>
@@ -105,7 +108,7 @@ function Home() {
               width: '150vw',
               maxWidth: '1000px',
               height: 'auto',
-              transform: 'translateX(-15%)',
+              transform: 'translateX(-12%)  translateY(5%)',
 
               zIndex: -1,
             }}
@@ -135,7 +138,7 @@ function Home() {
         ></HorizontalCard>
       </div> */}
 
-      <PageTitle style={{ padding: '3vh 10vw' }}>Projects</PageTitle>
+      <PageTitle style={{ padding: '3vh 10vw' }}>Featured Projects</PageTitle>
 
       <div id="projects" style={{ display: 'flex', padding: '0vw 8vw', flexDirection: 'column' }}>
         <Cardd
@@ -150,7 +153,7 @@ function Home() {
           title="Pillar"
           hreef="/projects/pillar"
           description={content.pillar}
-          date="Side Project  |  February 2021"
+          date="Hack the Globe |  February 2021"
         ></Cardd>
         <Cardd
           img={fundrisesmallpic}
@@ -160,6 +163,11 @@ function Home() {
           date="Side Project |  August 2019, December 2020"
         ></Cardd>
       </div>
+      <center>
+        <Button style={{ margin: '50px' }}>
+          <A href="/work">Check out my other projects!</A>{' '}
+        </Button>
+      </center>
     </div>
   );
 }

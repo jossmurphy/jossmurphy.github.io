@@ -26,7 +26,7 @@ const ArtContainer = styled('div')`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 30px;
 
   width: 96%;
 `;
@@ -63,12 +63,12 @@ export default function Art() {
   return (
     <div>
       <Header></Header>
-      <div style={{ height: '100px' }}></div>
+      {/* <div style={{ height: '100px' }}></div> */}
 
-      <CaseStudy>
+      {/* <CaseStudy>
         <PageTitle> Art </PageTitle>
         <P>Check out some of my illustrations! </P>
-      </CaseStudy>
+      </CaseStudy> */}
       <ArtContainer>
         <Gallery
           photos={photos}
