@@ -24,8 +24,6 @@ import {
   Hyperlink,
 } from '../styles/global.js';
 import fruitfly from '../assets/artphotos/ff.png';
-import { blue } from '@material-ui/core/colors';
-import { AutoComplete } from 'material-ui';
 import bpsmallpic from '../assets/projects/BlueprintHero.png';
 import pillarsmallpic from '../assets/projects/PillarHero.png';
 import fundrisesmallpic from '../assets/projects/FundriseHero.png';
@@ -165,7 +163,7 @@ function Home() {
       </div>
       <center>
         <Button style={{ margin: '50px' }}>
-          <A href="/work">Check out my other projects!</A>{' '}
+          <A href="/work">Check out more of my work!</A>{' '}
         </Button>
       </center>
     </div>

@@ -42,7 +42,6 @@ const BetterCardContent = styled(CardContent)`
 
 const BetterCard = styled(Card)`
   border: 2px solid ${colors.c40};
-
   &:hover {
     box-shadow: 8px 8px;
   }
@@ -65,8 +64,8 @@ export default function Cardd(props: any) {
   const classes = useStyles();
 
   return (
-    <A href={props.hreef} target="_blank">
-      <BetterCard className={classes.root} style={{ margin: '20px', borderRadius: '10px', display: 'flexbox' }}>
+    <BetterCard className={classes.root} style={{ margin: '1vw', borderRadius: '10px', display: 'flexbox' }}>
+      <A href={props.hreef} target="_blank">
         <CardMedia
           component="img"
           alt="Contemplative Reptile"
@@ -77,9 +76,9 @@ export default function Cardd(props: any) {
         <BetterCardContent>
           <Subtitle1 style={{ marginTop: '0px' }}>{props.title}</Subtitle1>
           <div style={{ display: 'flex', flexDirection: 'row', marginLeft: '-5px' }}>
+            {/* <Tag>hello</Tag>
             <Tag>hello</Tag>
-            <Tag>hello</Tag>
-            <Tag>hello</Tag>
+            <Tag>hello</Tag> */}
           </div>
           <P>{props.description}</P>
           <div style={{ display: 'flex', flexDirection: 'row', marginBottom: '10px', marginTop: '-20px' }}>
@@ -89,7 +88,7 @@ export default function Cardd(props: any) {
         {/* <Button style={{ margin: '15px', boxShadow: '0px 0px', display: 'flex-end', border: '1px' }}>
               <A href={props.hreef}>{'Read More'}</A>
             </Button> */}
-      </BetterCard>
-    </A>
+      </A>
+    </BetterCard>
   );
 }
