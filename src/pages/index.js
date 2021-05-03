@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Cardd from '../components/Card';
+import HorizontalCard from '../components/HorizontalCard';
 
 import styled from '@emotion/styled';
 import colors from '../styles/colors';
@@ -24,6 +25,9 @@ import {
 import fruitfly from '../assets/artphotos/ff.png';
 import { blue } from '@material-ui/core/colors';
 import { AutoComplete } from 'material-ui';
+import bpsmallpic from '../assets/projects/BlueprintHero.png';
+import pillarsmallpic from '../assets/projects/PillarHero.png';
+import fundrisesmallpic from '../assets/projects/FundriseHero.png';
 
 const BackgroundImage = styled('div')``;
 const links = {
@@ -57,8 +61,11 @@ const links = {
 };
 
 const content = {
-  bio: ` Hi! I'm Joss. I'm a software developer, product designer, and
+  bio: `Hi, I'm Jocelyne! I'm a software developer, product designer, and
   `,
+  blueprint: `Designing UW Blueprint's website to generate more interest in the organization among Non Profit partners and future members. `,
+  pillar: `Empowering women to take control of their wealth through a peer-based financial literacy app.`,
+  fundrise: `Reimagining large-scale fundraising intiatives.`,
 };
 
 function Home() {
@@ -69,7 +76,7 @@ function Home() {
       <div style={{ overflowX: 'hidden', overflowY: 'hidden', display: 'flex' }}>
         <div
           style={{
-            width: '90vw',
+            // width: '90vw',
             // maxWidth: '2000px',
             padding: '10vw',
             top: '50%',
@@ -106,20 +113,52 @@ function Home() {
         </div>
       </div>
 
-      <Button primary>
-        <A href="/projects/blueprint">Blueprint</A>
-      </Button>
-      <Button primary>
-        <A href="/projects/fundrise">Fundrise</A>
-      </Button>
-      <Button primary>
-        <A href="/projects/pillar">Pillar</A>
-      </Button>
-      <div style={{ height: '30vh' }}></div>
-      <div style={{ display: 'flex' }}>
-        <Cardd img={fruitfly} title="UW Blueprint Website Redesign"></Cardd>
-        <Cardd img={fruitfly} title="Pillar"></Cardd>
-        <Cardd img={fruitfly} title="Fundrise"></Cardd>
+      <div style={{ height: '10vh' }}></div>
+      {/* <div style={{ padding: '10vw' }}>
+        <HorizontalCard
+          img={bpsmallpic}
+          title="UW Blueprint Website Redesign"
+          hreef="/projects/blueprint"
+          description={content.blueprint}
+        ></HorizontalCard>
+        <HorizontalCard
+          img={bpsmallpic}
+          title="UW Blueprint Website Redesign"
+          hreef="/projects/blueprint"
+          description={content.blueprint}
+        ></HorizontalCard>
+        <HorizontalCard
+          img={bpsmallpic}
+          title="UW Blueprint Website Redesign"
+          hreef="/projects/blueprint"
+          description={content.blueprint}
+        ></HorizontalCard>
+      </div> */}
+
+      <PageTitle style={{ padding: '3vh 10vw' }}>Projects</PageTitle>
+
+      <div id="projects" style={{ display: 'flex', padding: '0vw 8vw', flexDirection: 'column' }}>
+        <Cardd
+          img={bpsmallpic}
+          title="UW Blueprint Website Redesign"
+          hreef="/projects/blueprint"
+          description={content.blueprint}
+          date=" UW Blueprint |  January 2021 - May 2021"
+        ></Cardd>
+        <Cardd
+          img={pillarsmallpic}
+          title="Pillar"
+          hreef="/projects/pillar"
+          description={content.pillar}
+          date="Side Project  |  February 2021"
+        ></Cardd>
+        <Cardd
+          img={fundrisesmallpic}
+          title="Fundrise"
+          hreef="/projects/fundrise"
+          description={content.fundrise}
+          date="Side Project |  August 2019, December 2020"
+        ></Cardd>
       </div>
     </div>
   );

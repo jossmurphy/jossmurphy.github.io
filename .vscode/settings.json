@@ -3,5 +3,7 @@
     "source.fixAll.eslint": true
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "scm.inputFontSize": 16,
+  "editor.fontSize": 14
 }

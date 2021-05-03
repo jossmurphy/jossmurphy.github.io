@@ -46,8 +46,14 @@ export const Button = styled.button`
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  border: 2px solid ${colors.c40};
+
   color: ${colors.c10};
-  box-shadow: 5px 5px;
+  box-shadow: 3px 3px;
+
+  &:hover {
+    box-shadow: 5px 5px;
+  }
 `;
 
 export const Container = styled.div((props) => ({
